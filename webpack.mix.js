@@ -13,3 +13,6 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
+mix.copyDirectory('node_modules/chart.js', 'public/templates/admin/js/chart.js');
+mix.copyDirectory('node_modules/fastclick', 'public/templates/admin/js/fastclick');
+mix.copyDirectory('resources/assets/templates/admin', 'public/templates/admin');
